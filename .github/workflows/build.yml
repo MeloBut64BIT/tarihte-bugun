@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '22'
         
     - name: Install dependencies
       run: npm ci
@@ -51,4 +51,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: app-release
+<<<<<<< HEAD
         path: android/app/build/outputs/apk/release/app-release-unsigned.apk
+=======
+        path: app/build/outputs/apk/release/app-release.apk
+>>>>>>> 20d3e7b2a9f17e9e21895cfc4374db84003c54fb
